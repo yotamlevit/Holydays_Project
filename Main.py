@@ -1,11 +1,17 @@
+"""
+author: Yotam Levir
+project: Holyday project
+"""
+
 from Tkinter import *
-from ClosedCurve import *
 from Right_Triangle import *
 from Isosceles_tri import *
 from Square import *
 from Equilateral_Triangle import *
 from Rectangle import *
 from Parallelogram import *
+from Circle import *
+from Ellipse import *
 
 
 WINDOW_WIDTH = 1000
@@ -64,6 +70,18 @@ def main():
     para = Parallelogram(pa, RED)
     para.draw_me(canvas)
     print "The Parallelogram area is: ", para.calc_area()
+
+    #Circle
+    cer = [200, 200, 200]
+    cr = Circle(cer, RED)
+    cr.draw_me(canvas)
+    print "The Circle area is: ", cr.calc_area()
+
+    #Ellipse
+    ell = [200, 200, 200, 100]
+    el = Ellipse(ell, BLUE)
+    el.draw_me(canvas)
+    print "The Ellipse area is: ", el.calc_area()
     root.mainloop()
 
 if __name__ == '__main__':

@@ -7,6 +7,8 @@ class GUI(Tkinter.Tk):
 
     def initialize(self):
         self.grid
+        self.entry = Tkinter.Entry(self)
+        self.entry.grid(column=0,row=0,sticky='EW')
 
 if __name__ == "__main__":
     app = GUI(None)

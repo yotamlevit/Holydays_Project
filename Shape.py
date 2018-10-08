@@ -1,4 +1,5 @@
 from abc import ABCMeta, abstractmethod
+import math
 
 
 class Shape:
@@ -6,6 +7,11 @@ class Shape:
     __metaclass__ = ABCMeta
 
     def __init__(self, color):
+        """
+        an initializer for the class
+        ;ani: bool - animation on or off
+        ;color: is the color that the user wants to fill the shape with
+        """
         self.ani = False
         self.color = "white"
 

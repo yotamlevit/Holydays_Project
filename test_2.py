@@ -2,12 +2,14 @@ from Tkinter import *
 import math
 root = Tk()
 
-canvas = Canvas(root, width = 500, height = 500)
+canvas = Canvas(root, width = 2000, height = 2000)
 canvas.pack()
 dot = [100, 100, 150, 200, 300, 400, 500, 500]
 temp = [100, 100, 100, 200, 300, 200]
 
-rec = canvas.create_rectangle(200, 500, 150, 150, fill = "green")
+canvas.create_oval(10, 10, 80, 80, fill="green", width=2)
+canvas.create_oval(10, 10, 1000, 1000, fill="green", width=2)
+#rec = canvas.create_rectangle(200, 500, 150, 150, fill = "green")
 #canvas.create_polygon(dot, fill = "green")
 root.mainloop()
 
