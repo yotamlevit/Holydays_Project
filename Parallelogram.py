@@ -1,5 +1,5 @@
 from Polygon import *
-
+import math
 
 class Parallelogram(Polygon):
     def __init__(self, values, color):
@@ -8,10 +8,18 @@ class Parallelogram(Polygon):
         self.color = color
 
     def draw_me(self, canvas):
-        canvas.create_rectangle(self.values[0], self.values[1], self.values[0] + self.values[2], self.values[1] + self.values[3], fill=self.color)
+
+        locations = [self.values[0], self.values[1]]
+        locations.append(self.values[0] + self.values[2])
+        locations.append(self.values[1])
+        locations.append(self.values[2] + self.values[0]-self.values[3]*math.sin(math.radians(self.values[4]-90)))
+        locations.append((self.values[1]+self.values[3]*math.cos(math.radians(self.values[4]-90))))
+        locations.append(self.values[0]-self.values[3]*math.sin(math.radians(self.values[4]-90)))
+        locations.append((self.values[1]+self.values[3]*math.cos(math.radians(self.values[4]-90))))
+        canvas.create_polygon(locations, fill=self.color)
 
     def calc_area(self):
-        return self.values[2] * self.values[3]
+        return self.values[2]*self.values[3]
 
     def move_me(self, x, y):
         pass

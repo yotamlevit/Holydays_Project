@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from Tkinter import *
 from ClosedCurve import *
 from Right_Triangle import *
@@ -6,6 +5,9 @@ from Isosceles_tri import *
 from Square import *
 from Equilateral_Triangle import *
 from Rectangle import *
+from Parallelogram import *
+
+
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 1000
 BLACK = "black"
@@ -58,6 +60,10 @@ def main():
     print "The Rectangle's area is: ", rec.calc_area()
 
     #Parallelogram
+    pa = [500, 400, 100, 50, 150]
+    para = Parallelogram(pa, RED)
+    para.draw_me(canvas)
+    print "The Parallelogram area is: ", para.calc_area()
     root.mainloop()
 
 if __name__ == '__main__':

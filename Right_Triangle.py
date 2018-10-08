@@ -8,7 +8,6 @@ class Right_Tri(Polygon):
 
     def draw_me(self, canvas):
         temp = [self.values[0], self.values[1], self.values[0], self.values[2]+self.values[1], self.values[3]+self.values[0], self.values[2]+self.values[1]]
-        print temp
         canvas.create_polygon(temp, fill= self.color)\
 
 
