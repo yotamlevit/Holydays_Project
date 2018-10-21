@@ -13,7 +13,7 @@ class Shape:
         ;color: is the color that the user wants to fill the shape with
         """
         self.ani = False
-        self.color = "white"
+        self.color = color
 
     @abstractmethod
     def draw_me(self, canvas):

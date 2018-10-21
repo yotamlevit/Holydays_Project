@@ -2,7 +2,7 @@ from Shape import *
 
 
 class ClosedCurve(Shape):
-    def __init__(self, value, color):
+    def __init__(self, values, color):
         """
         an initializer for the class
         ;values: is a list of the values that
@@ -11,11 +11,11 @@ class ClosedCurve(Shape):
         fill the closed curve shape with
         """
         super(ClosedCurve, self).__init__(color)
-        self.value = value
-        self.color = color
+        self.values = values
 
     def draw_me(self, canvas):
-        pass
+        canvas.create_oval(self.values,
+                           fill=self.color)
 
     def calc_area(self):
         pass

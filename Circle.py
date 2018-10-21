@@ -11,26 +11,18 @@ class Circle(ClosedCurve):
         ;color: is the color that the user
         wants to fill the circle with
         """
-        super(Circle, self).__init__(values, color)
-        self.values = values
-        self.color = color
-
-    def draw_me(self, canvas):
-        """
-        a function that draw a circle on the screen
-        using the values that the user gave
-        """
-        canvas.create_oval(self.value[0]-self.value[2],
-                           self.value[1]-self.value[2],
-                           self.value[0]+self.value[2],
-                           self.value[1]+self.value[2],
-                           fill=self.color)
+        dot = [values[0]-values[2],
+               values[1]-values[2],
+               values[0]+values[2],
+               values[1]+values[2]]
+        self.area = math.pi * values[2]**2
+        super(Circle, self).__init__(dot, color)
 
     def calc_area(self):
         """
         a function that calculate the circle's area
         """
-        return math.pi * self.value[2]**2
+        return self.area
 
     def move_me(self, x, y):
         pass

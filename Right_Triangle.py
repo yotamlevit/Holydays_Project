@@ -11,25 +11,18 @@ class Right_Tri(Polygon):
         ;color: is the color that the user wants to fill the
         right triangle with
         """
-        super(Right_Tri, self).__init__(values, color)
-        self.values = values
-        self.color = color
+        self.area = values[2]*values[3]/2
+        dot = [values[0], values[1], values[0],
+               values[2]+values[1], values[3]+values[0],
+               values[2]+values[1]]
+        super(Right_Tri, self).__init__(dot, color)
 
-    def draw_me(self, canvas):
-        """
-        a function that draw a right triangle on the
-        screen using the values that the user gave
-        """
-        temp = [self.values[0], self.values[1], self.values[0],
-                self.values[2]+self.values[1], self.values[3]+self.values[0],
-                self.values[2]+self.values[1]]
-        canvas.create_polygon(temp, fill=self.color)
 
     def calc_area(self):
         """
         a function that calculate the right triangle's area
         """
-        return self.values[2]*self.values[3]/2
+        return self.area
 
     def move_me(self, x, y):
         pass

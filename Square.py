@@ -9,24 +9,18 @@ class Square(Polygon):
         to create a square, including start point and the side's length
         ;color: is the color that the user wants to fill the square with
         """
-        super(Square, self).__init__(values, color)
-        self.values = values
-        self.color = color
-
-    def draw_me(self, canvas):
-        """
-        a function that draw a square on the screen
-        using the values that the user gave
-        """
-        canvas.create_rectangle(self.values[0], self.values[1],
-                                self.values[0]+self.values[2],
-                                self.values[1]+self.values[2], fill=self.color)
+        dot = [values[0], values[1],
+               values[0] + values[2], values[1],
+               values[0] + values[2], values[1] + values[2],
+               values[0], values[1] + values[2]]
+        self.area = values[2]**2
+        super(Square, self).__init__(dot, color)
 
     def calc_area(self):
         """
         a function that calculate the square's area
         """
-        return self.values[2]**2
+        return self.area
 
     def move_me(self, x, y):
         pass

@@ -12,7 +12,6 @@ class Polygon(Shape):
         """
         super(Polygon, self).__init__(color)
         self.dot = dot
-        self.color = color
 
     def draw_me(self, canvas):
         """

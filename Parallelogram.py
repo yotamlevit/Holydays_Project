@@ -10,33 +10,25 @@ class Parallelogram(Polygon):
         the big side length and the small side length
         ;color: is the color that the user wants to fill the parallelogram with
         """
-        super(Parallelogram, self).__init__(values, color)
-        self.values = values
-        self.color = color
-
-    def draw_me(self, canvas):
-        """
-        a function that draw a parallelogram on the screen
-        using the values that the user gave
-        """
-        locations = [self.values[0], self.values[1]]
-        locations.append(self.values[0] + self.values[2])
-        locations.append(self.values[1])
-        locations.append(self.values[2] + self.values[0]-self.values[3] *
-                         math.sin(math.radians(self.values[4]-90)))
-        locations.append((self.values[1]+self.values[3] *
-                          math.cos(math.radians(self.values[4]-90))))
-        locations.append(self.values[0]-self.values[3] *
-                         math.sin(math.radians(self.values[4]-90)))
-        locations.append((self.values[1]+self.values[3] *
-                          math.cos(math.radians(self.values[4]-90))))
-        canvas.create_polygon(locations, fill=self.color)
+        self.area = values[2]*values[3]
+        dot = [values[0], values[1]]
+        dot.append(values[0] + values[2])
+        dot.append(values[1])
+        dot.append(values[2] + values[0]-values[3] *
+                   math.sin(math.radians(values[4]-90)))
+        dot.append((values[1]+values[3] *
+                    math.cos(math.radians(values[4]-90))))
+        dot.append(values[0]-values[3] *
+                   math.sin(math.radians(values[4]-90)))
+        dot.append((values[1]+values[3] *
+                    math.cos(math.radians(values[4]-90))))
+        super(Parallelogram, self).__init__(dot, color)
 
     def calc_area(self):
         """
         a function that calculate the parallelogram's area
         """
-        return self.values[2]*self.values[3]
+        return self.area
 
     def move_me(self, x, y):
         pass

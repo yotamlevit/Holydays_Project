@@ -10,25 +10,18 @@ class Rectangle(Polygon):
         the big side length and the small side length
         ;color: is the color that the user wants to fill the rectangle with
         """
-        super(Rectangle, self).__init__(values, color)
-        self.values = values
-        self.color = color
-
-    def draw_me(self, canvas):
-        """
-        a function that draw a rectangle on the
-        screen using the values that the user gave
-        """
-        canvas.create_rectangle(self.values[0], self.values[1],
-                                self.values[0] + self.values[2],
-                                self.values[1] + self.values[3],
-                                fill=self.color)
+        dot = [values[0], values[1],
+               values[0] + values[2], values[1],
+               values[0] + values[2], values[1] + values[3],
+               values[0], values[1] + values[3]]
+        self.area = values[2] * values[3]
+        super(Rectangle, self).__init__(dot, color)
 
     def calc_area(self):
         """
         a function that calculate the rectangle's area
         """
-        return self.values[2] * self.values[3]
+        return self.area
 
     def move_me(self, x, y):
         pass
