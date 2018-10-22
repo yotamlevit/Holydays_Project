@@ -26,3 +26,4 @@ class Ellipse(ClosedCurve):
 
     def move_me(self, x, y):
         pass
+
