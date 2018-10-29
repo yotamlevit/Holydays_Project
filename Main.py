@@ -12,6 +12,11 @@ from Rectangle import *
 from Parallelogram import *
 from Circle import *
 from Ellipse import *
+from Main_GUI import *
+
+gui = Toplevel1()
+dot = [100, 100, 150, 200]
+gui.Canvas1.create_polygon(dot,fill="green")
 
 
 WINDOW_WIDTH = 1000
