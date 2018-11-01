@@ -2,7 +2,7 @@ from ClosedCurve import *
 
 
 class Circle(ClosedCurve):
-    def __init__(self, values, color):
+    def __init__(self, x, y, rad, color):
         """
         an initializer for the class
         ;values: is a list of the values that the class
@@ -11,11 +11,11 @@ class Circle(ClosedCurve):
         ;color: is the color that the user
         wants to fill the circle with
         """
-        dot = [values[0]-values[2],
-               values[1]-values[2],
-               values[0]+values[2],
-               values[1]+values[2]]
-        self.area = math.pi * values[2]**2
+        dot = [x-rad,
+               y-rad,
+               x+rad,
+               y+rad]
+        self.area = math.pi * rad**2
         super(Circle, self).__init__(dot, color)
 
     def calc_area(self):

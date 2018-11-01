@@ -2,7 +2,7 @@ from ClosedCurve import *
 
 
 class Ellipse(ClosedCurve):
-    def __init__(self, values, color):
+    def __init__(self, x, y, hor_rad, rad, color):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from
@@ -11,11 +11,11 @@ class Ellipse(ClosedCurve):
         ;color: is the color that the user wants to
         fill the ellipse with
         """
-        dot = [values[0]-values[2],
-               values[1]-values[3],
-               values[0]+values[2],
-               values[1]+values[3]]
-        self.area = math.pi * values[2] * values[3]
+        dot = [x-hor_rad,
+               y-rad,
+               x+hor_rad,
+               y+rad]
+        self.area = math.pi * hor_rad * rad
         super(Ellipse, self).__init__(dot, color)
 
     def calc_area(self):

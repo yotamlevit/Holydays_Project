@@ -1,8 +1,9 @@
 from Polygon import *
 
+BLACK = "black"
 
 class Right_Tri(Polygon):
-    def __init__(self, values, color):
+    def __init__(self, x=10, y=10, side1=10, side2=10, color=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from the user
@@ -11,10 +12,10 @@ class Right_Tri(Polygon):
         ;color: is the color that the user wants to fill the
         right triangle with
         """
-        self.area = values[2]*values[3]/2
-        dot = [values[0], values[1], values[0],
-               values[2]+values[1], values[3]+values[0],
-               values[2]+values[1]]
+        self.area = side1*side2/2
+        dot = [x, y, x,
+               side1+y, side2+x,
+               side1+y]
         super(Right_Tri, self).__init__(dot, color)
 
 

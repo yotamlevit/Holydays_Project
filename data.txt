@@ -1,0 +1,6 @@
+
+x_start;13;y_start;14;side1;10;side2;12;color;15
+x_start;99;y_start;44;side1;77;side2;88;color;55
+x_start;3;y_start;4;side1;1;side2;2;color;5
+x_start;200;y_start;200;side1;100;side2;100;color;black
+x_start;500;y_start;200;side1;300;side2;300;color;green

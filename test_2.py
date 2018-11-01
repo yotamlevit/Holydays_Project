@@ -1,25 +1,25 @@
 from Tkinter import *
 import math
 root = Tk()
+import subprocess
+import Creat_Right_Tri as Right_tri
+import sys
 
-canvas = Canvas(root, width = 2000, height = 2000)
-canvas.pack()
-dot = [100, 100, 150, 200, 300, 400, 500, 500]
-temp = [100, 100, 100, 200, 300, 200]
 
-canvas.create_oval(10, 10, 80, 80, fill="green", width=2)
-canvas.create_oval(10, 10, 1000, 1000, fill="green", width=2)
-#rec = canvas.create_rectangle(200, 500, 150, 150, fill = "green")
-#canvas.create_polygon(dot, fill = "green")
-root.mainloop()
 
 
 def main():
-    is_tri1 = [500, 500, 600, 500]
-    print is_tri1[2]/2
-    print is_tri1[3]
-    print is_tri1[2]+0.0/is_tri1[3]+0.0
-    print math.acos(is_tri1[2]+0.0/2/is_tri1[3]+0.0)
+    path_to_tool = sys.argv[0].split("/")
+    path_to_tool.pop()
+    temp = ""
+    for word in path_to_tool:
+        temp += word + "/"
+    path_to_tool = temp[:-1]
+    path_to_tool += "/" + "Creat_Right_Tri"
+    print path_to_tool
+    value = ["pytohn", path_to_tool] + []
+    a = subprocess.check_output([value, root)
+    print a
 
 
 if __name__ == '__main__':

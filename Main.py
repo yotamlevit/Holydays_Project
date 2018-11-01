@@ -14,10 +14,6 @@ from Circle import *
 from Ellipse import *
 from Main_GUI import *
 
-gui = Toplevel1()
-dot = [100, 100, 150, 200]
-gui.Canvas1.create_polygon(dot,fill="green")
-
 
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 1000
@@ -41,50 +37,81 @@ def main():
     poly.draw_me(canvas)
 
     #right triangle
-    val_ri_tri = [500, 100, 100, 300]
-    ri_tri = Right_Tri(val_ri_tri, BLUE)
+    x = 500
+    y = 100
+    side1 = 100
+    side2 = 300
+    color = BLUE
+    ri_tri = Right_Tri(x, y, side1, side2, color)
     ri_tri.draw_me(canvas)
     print "The right triangle's area is: ", ri_tri.calc_area()
 
     #Isosceles triangle
-    is_tri1 = [500, 500, 600, 500]
-    is_tri = Isosceles_Tri(is_tri1, BLACK)
+    x = 500
+    y = 500
+    side1 = 600
+    base = 500
+    color = BLACK
+    is_tri = Isosceles_Tri(x, y, side1, base, color)
     is_tri.draw_me(canvas)
     print "The Isosceles triangle's area is:  ", is_tri.calc_area()
 
     #Equilateral Triangle
-    equ = [500, 500, 300]
-    equ_tri = Equilateral_Triangle(equ, GREEN)
+    x = 500
+    y = 500
+    side1 = 300
+    color = GREEN
+    equ_tri = Equilateral_Triangle(x, y, side1, color)
     equ_tri.draw_me(canvas)
     print "The Equilateral Triangle's area is: ", equ_tri.calc_area()
 
     #square
-    sq = [500, 500, 150]
-    sqr = Square(sq, RED)
+    x = 500
+    y = 500
+    side1 = 150
+    color = RED
+    sqr = Square(x, y, side1, color)
     sqr.draw_me(canvas)
     print "The square's area is: ", sqr.calc_area()
 
     #Rectangle
     re = [300, 300, 150, 50]
-    rec = Rectangle(re, GREEN)
+    x = 300
+    y = 300
+    side1 = 150
+    side2 = 50
+    color = GREEN
+    rec = Rectangle(x, y, side1, side2, color)
     rec.draw_me(canvas)
     print "The Rectangle's area is: ", rec.calc_area()
 
     #Parallelogram
-    pa = [500, 400, 100, 50, 150]
-    para = Parallelogram(pa, RED)
+    x = 500
+    y = 400
+    side1 = 100
+    side2 = 50
+    angle = 150
+    color = RED
+    para = Parallelogram(x, y, side1, side2, angle, color)
     para.draw_me(canvas)
     print "The Parallelogram area is: ", para.calc_area()
 
     #Circle
-    cer = [200, 200, 200]
-    cr = Circle(cer, RED)
+    x = 200
+    y = 200
+    radius = 200
+    color = RED
+    cr = Circle(x, y, radius, color)
     cr.draw_me(canvas)
     print "The Circle area is: ", cr.calc_area()
 
     #Ellipse
-    ell = [200, 200, 200, 100]
-    el = Ellipse(ell, BLUE)
+    x = 200
+    y = 200
+    hor_rad = 200
+    rad = 100
+    color = BLUE
+    el = Ellipse(x, y, hor_rad, rad, color)
     el.draw_me(canvas)
     print "The Ellipse area is: ", el.calc_area()
     root.mainloop()

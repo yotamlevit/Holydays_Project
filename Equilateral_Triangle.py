@@ -10,14 +10,14 @@ class Equilateral_Triangle(Polygon):
     ;color: is the color that the user wants to
      fill the equilateral triangle with
     """
-    def __init__(self, values, color):
-        hight = math.sin(math.acos((values[2]/2) /
-                        values[2])) * values[2]
-        dot = [values[0], values[1],
-               values[0] + values[2]/2,
-               values[1] + hight,
-               values[0] - values[2]/2,
-               values[1] + hight]
+    def __init__(self, x, y, side, color):
+        hight = math.sin(math.acos((side/2) /
+                        side)) * side
+        dot = [x, y,
+               x + side/2,
+               y + hight,
+               x - side/2,
+               y + hight]
         self.area = hight*dot[2]/2
 
         super(Equilateral_Triangle, self).__init__(dot, color)
