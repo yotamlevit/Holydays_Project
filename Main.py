@@ -3,7 +3,15 @@ author: Yotam Levir
 project: Holyday project
 """
 
-from Tkinter import *
+import sys
+path_to_tool = sys.argv[0].split("/")
+path_to_tool.pop()
+temp = ""
+for word in path_to_tool:
+    temp += word + "/"
+path_to_tool = temp[:-1]
+path_to_tool += "/" + "Shapes"
+sys.path.insert(0, path_to_tool)
 from Right_Triangle import *
 from Isosceles_tri import *
 from Square import *
@@ -30,7 +38,6 @@ canvas.pack()
 
 
 def main():
-
     #polygon
     dot = [100, 100, 150, 200, 300, 400, 500, 500]
     poly = Polygon(dot, WHITE)
@@ -41,7 +48,7 @@ def main():
     y = 100
     side1 = 100
     side2 = 300
-    color = BLUE
+    color = "tan1"
     ri_tri = Right_Tri(x, y, side1, side2, color)
     ri_tri.draw_me(canvas)
     print "The right triangle's area is: ", ri_tri.calc_area()
@@ -49,12 +56,13 @@ def main():
     #Isosceles triangle
     x = 500
     y = 500
-    side1 = 600
-    base = 500
+    base = 600
+    side = 500
     color = BLACK
-    is_tri = Isosceles_Tri(x, y, side1, base, color)
+    is_tri = Isosceles_Tri(x, y, base, side, color)
     is_tri.draw_me(canvas)
     print "The Isosceles triangle's area is:  ", is_tri.calc_area()
+
 
     #Equilateral Triangle
     x = 500

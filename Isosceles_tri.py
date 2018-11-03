@@ -11,18 +11,16 @@ class Isosceles_Tri(Polygon):
     ;color: is the color that the user wants to
      fill the isosceles triangle with
     """
-    def __init__(self, x, y, side, base, color):
+    def __init__(self, x, y, base, side, color):
         side += 0.0
         base += 0.0
-        hight = math.sin(math.acos((side/2)
-                                   / base))*base
+        hight = math.sin(math.acos((base/2)
+                                   / side))*side
         dot = [x, y,
-               x + side/2,
+               x + base/2,
                y + hight,
-               x - side/2,
+               x - base/2,
                y + hight]
-        hight = math.sin(math.acos((dot[2]/2)
-                                   / dot[3]))*dot[3]
         self.area = hight * dot[2]/2
         super(Isosceles_Tri, self).__init__(dot, color)
 

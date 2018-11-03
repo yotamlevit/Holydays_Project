@@ -18,7 +18,7 @@ class Polygon(Shape):
         a function that draw a polygon on the screen
         using the dots that the user gave
         """
-        canvas.create_polygon(self.dot, fill=self.color)
+        return canvas.create_polygon(self.dot, fill=self.color)
 
     def calc_area(self):
         pass

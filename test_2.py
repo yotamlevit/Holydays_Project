@@ -1,26 +1,21 @@
 from Tkinter import *
 import math
-root = Tk()
 import subprocess
 import Creat_Right_Tri as Right_tri
 import sys
 
-
+root = Tk()
+canvas = Canvas(root, width=1000, height=1000)
+canvas.pack()
 
 
 def main():
-    path_to_tool = sys.argv[0].split("/")
-    path_to_tool.pop()
-    temp = ""
-    for word in path_to_tool:
-        temp += word + "/"
-    path_to_tool = temp[:-1]
-    path_to_tool += "/" + "Creat_Right_Tri"
-    print path_to_tool
-    value = ["pytohn", path_to_tool] + []
-    a = subprocess.check_output([value, root)
-    print a
-
+    dot = [100, 100, 150, 200, 300, 400, 500, 500]
+    a = canvas.create_polygon(dot, fill="red")
+    dot = [500, 500, 800, 900, 700, 500]
+    b = canvas.create_polygon(dot, fill="blue")
+    canvas.move(1,-100,-100)
+    root.mainloop()
 
 if __name__ == '__main__':
     main()
