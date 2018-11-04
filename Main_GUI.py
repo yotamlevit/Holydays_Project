@@ -79,6 +79,7 @@ class Paint:
             print "file cleared"
 
         self.data = DataBase()
+        self.root = top
 
 
         self.menubar = Menu(top,font=font9,bg=_bgcolor,fg=_fgcolor)
@@ -218,8 +219,9 @@ class Paint:
 
     def click(self, event):
         x, y = event.x, event.y
-        if self.shape_c.find_overlapping(x, y,x,y):
-            Main_GUI_support.click()
+        clic_shape = self.shape_c.find_overlapping(x, y, x, y)
+        if clic_shape:
+            Main_GUI_support.click(self.root, self.data, self.shape_c, clic_shape)
 
 
 

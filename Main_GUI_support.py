@@ -18,6 +18,7 @@ from Parallelogram import *
 from Circle import *
 from Ellipse import *
 from Main_GUI import *
+import Shape_Func
 
 path_to_tool = sys.argv[0].split("/")
 path_to_tool.pop()
@@ -41,8 +42,8 @@ except ImportError:
     py3 = True
 
 
-def click(event):
-
+def click(root, data, canvas, shape):
+    Shape_Func.create_Shape_Change(root, data, canvas, shape)
     sys.stdout.flush()
 
 def creat_circle(root, data, canvas):

@@ -1,1 +1,0 @@
-Name:  d:   x: 300   y: 300   side1: 100   side2: 100   color: black

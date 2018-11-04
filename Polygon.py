@@ -21,7 +21,7 @@ class Polygon(Shape):
         return canvas.create_polygon(self.dot, fill=self.color)
 
     def calc_area(self):
-        pass
+        return "To much math for me"
 
     def move_me(self, x, y):
         pass

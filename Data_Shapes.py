@@ -12,18 +12,19 @@ class DataBase:
         else:
             return False
 
-    def get_value(self, key):
+    def get_obj(self, key):
         if self.is_key(key):
             return self.dic[key]
         return "invalid key"
 
     def delete_value(self, key):
         if key in self.dic:
-            return self.dic.pop(key)
+            self.dic.pop(key)
+            return "delete"
         return "invalid key"
 
     def is_key(self, key):
-        if type(key) == str:
+        if type(key) == int:
             return True
         return False
 
