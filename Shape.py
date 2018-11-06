@@ -14,6 +14,7 @@ class Shape:
         """
         self.ani = False
         self.color = color
+        self.move = True
 
     @abstractmethod
     def draw_me(self, canvas):
@@ -23,15 +24,15 @@ class Shape:
     def calc_area(self):
         pass
 
-    @abstractmethod
     def move_me(self, x, y):
-        pass
+        if self.move:
+            print m
 
     def animation_on(self):
         self.ani = True
 
-    def animation_on(self):
-        self.ani = True
+    def animation_off(self):
+        self.ani = False
 
     def set_fill_color(self, color):
         self.color = color

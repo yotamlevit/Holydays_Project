@@ -88,7 +88,7 @@ COLORS=['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old 
 'gray66', 'gray67', 'gray68', 'gray69', 'gray70', 'gray71', 'gray72', 'gray73', 'gray74',
 'gray75', 'gray76', 'gray77', 'gray78', 'gray79', 'gray80', 'gray81', 'gray82', 'gray83',
 'gray84', 'gray85', 'gray86', 'gray87', 'gray88', 'gray89', 'gray90', 'gray91', 'gray92',
-'gray93', 'gray94', 'gray95', 'gray97', 'gray98', 'gray99']
+'gray93', 'gray94', 'gray95', 'gray97', 'gray98', 'gray99', 'black']
 try:
     from Tkinter import *
 except ImportError:
@@ -273,11 +273,12 @@ class Creat_Isosceles_Triangle:
         side = self.side.get()
         base = self.base.get()
         color = self.color.get()
-        if x.isdigit() and y.isdigit() and side.isdigit() and base.isdigit() and color is not "" and color is not "" and self.can_be_isos(int(base), int(side)) and color in COLORS:
+        if x.isdigit() and y.isdigit() and side.isdigit() and base.isdigit() and color is not "" and self.can_be_isos(int(base), int(side)) and color in COLORS:
             obj = [Isosceles_Tri(int(x), int(y), int(base), int(side), color),[int(x), int(y), int(base), int(side), color]]
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)
             destroy_Creat_Isosceles_Triangle()
+
 
     def can_be_isos(self, base, side):
         side1 = side + 0.0

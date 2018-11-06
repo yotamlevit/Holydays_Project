@@ -47,7 +47,7 @@ def main():
     x = 500
     y = 100
     side1 = 100
-    side2 = 300
+    side2 = 100
     color = "tan1"
     ri_tri = Right_Tri(x, y, side1, side2, color)
     ri_tri.draw_me(canvas)

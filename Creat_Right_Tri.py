@@ -25,7 +25,7 @@ COLORS  =['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'ol
 'light blue', 'powder blue', 'pale turquoise', 'dark turquoise', 'medium turquoise', 'turquoise',
 'cyan', 'light cyan', 'cadet blue', 'medium aquamarine', 'aquamarine', 'dark green', 'dark olive green',
 'dark sea green', 'sea green', 'medium sea green', 'light sea green', 'pale green', 'spring green',
-'lawn green', 'medium spring green', 'green yellow', 'lime green', 'yellow green',
+'lawn green', 'medium spring green', 'green', 'green yellow', 'lime green', 'yellow green',
 'forest green', 'olive drab', 'dark khaki', 'khaki', 'pale goldenrod', 'light goldenrod yellow',
 'light yellow', 'yellow', 'gold', 'light goldenrod', 'goldenrod', 'dark goldenrod', 'rosy brown',
 'indian red', 'saddle brown', 'sandy brown',
@@ -90,7 +90,7 @@ COLORS  =['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'ol
 'gray66', 'gray67', 'gray68', 'gray69', 'gray70', 'gray71', 'gray72', 'gray73', 'gray74',
 'gray75', 'gray76', 'gray77', 'gray78', 'gray79', 'gray80', 'gray81', 'gray82', 'gray83',
 'gray84', 'gray85', 'gray86', 'gray87', 'gray88', 'gray89', 'gray90', 'gray91', 'gray92',
-'gray93', 'gray94', 'gray95', 'gray97', 'gray98', 'gray99']
+'gray93', 'gray94', 'gray95', 'gray97', 'gray98', 'gray99', 'black']
 
 
 try:
@@ -309,7 +309,7 @@ class Creat_Right_Teiangle:
         side1 = self.side_one.get()
         side2 = self.side_two.get()
         color = self.Color.get()
-        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color is not "" and color in COLORS:
+        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color in COLORS:
             obj = [Right_Tri(int(x), int(y), int(side1), int(side2), color),[int(x), int(y), int(side1), int(side2), color]]
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)

@@ -63,8 +63,6 @@ def creat_equilateral_triangle(root, data, canvas):
 
 def creat_isos_tri(root, data, canvas):
     Creat_Isos_Tri.create_Creat_Isosceles_Triangle(root, data, canvas)
-    with open(DATABASE, "r") as file:
-        print file.readline()
     print('Main_GUI_support.creat_isos_tri')
     sys.stdout.flush()
 
@@ -81,8 +79,6 @@ def creat_rectangle(root, data, canvas):
 
 def creat_right_tri(root, data, canvas):
     Creat_Right_Tri.create_Creat_Right_Teiangle(root, data, canvas)
-    with open(DATABASE, "r") as file:
-        print file.readline()
     print('Main_GUI_support.creat_right_tri')
     sys.stdout.flush()
 
