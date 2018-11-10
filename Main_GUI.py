@@ -207,12 +207,38 @@ class Paint:
         self.shape_c.configure(width=953)
         self.shape_c.bind('<Double-1>', self.click)
 
+        self.delete1 = Button(top)
+        self.delete1.place(relx=0.0, rely=0.9, height=104, width=125)
+        self.delete1.configure(activebackground="#d9d9d9")
+        self.delete1.configure(activeforeground="#000000")
+        self.delete1.configure(background="#d9d9d9")
+        self.delete1.configure(disabledforeground="#a3a3a3")
+        self.delete1.configure(foreground="#000000")
+        self.delete1.configure(highlightbackground="#d9d9d9")
+        self.delete1.configure(highlightcolor="black")
+        self.delete1.configure(pady="0")
+        self.delete1.configure(text='''Delete all''')
+        self.delete1.configure(width=127)
+        self.delete1.bind('<Button-1>',lambda e: self.delete_all())
+
     def click(self, event):
+        """
+        operating when the user double clicked on the canvas
+         if he clicked on a shape the program will start
+          the support click function
+        ;event: the mouse x and y values
+
+        """
         x, y = event.x, event.y
         clic_shape = self.shape_c.find_overlapping(x, y, x, y)
-        print clic_shape
         if clic_shape:
             Main_GUI_support.click(self.root, self.data, self.shape_c, clic_shape)
+
+    def delete_all(self):
+        shapes = self.shape_c.find_overlapping(0, 0, 100000, 100000)
+        for id in shapes:
+            self.shape_c.delete(id)
+            self.data.delete_value(id)
 
 
 

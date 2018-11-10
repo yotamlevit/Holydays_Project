@@ -300,6 +300,11 @@ class Create_Parallelogram:
             self.txt_creat_para.configure(text='''Mode Parallelogra''')
 
     def button_pres(self):
+        """
+        operating when the user clicked on the create
+        button to create a shape or to change it
+        if values are incorrect show msg in the screen
+        """
         x = self.x.get()
         y = self.y.get()
         side = self.side1.get()
@@ -311,10 +316,12 @@ class Create_Parallelogram:
             if self.shape is not None:
                 self.canv.delete(self.shape)
                 self.data.delete_value(self.shape)
-            obj = [Parallelogram(int(x), int(y), int(side), int(side2), int(angle), color, line), [int(x), int(y), int(side), int(side2), int(angle), color, line]]
+            obj = [Parallelogram(int(x), int(y), int(side), int(side2), int(angle), color, line), [int(x), int(y), int(side), int(side2), int(angle), color, line] and int(x) < 1001 and int(y) < 916]
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)
             destroy_Create_Parallelogram()
+        else:
+            self.txt_creat_para.configure(text="invalid values")
 
 
 

@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main_GUI.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main_GUI.py">
+      <file leaf-file-name="Creat_Right_Tri.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Right_Tri.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="21" selection-start="8072" selection-end="8072" vertical-scroll-proportion="0.0" vertical-offset="3032" max-vertical-offset="3893">
+            <state line="358" column="172" selection-start="18532" selection-end="18532" vertical-scroll-proportion="0.0" vertical-offset="5673" max-vertical-offset="6545">
               <folding>
                 <element signature="e#191#201#0" expanded="true" />
               </folding>
@@ -34,41 +34,100 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_GUI_support.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main_GUI_support.py">
+      <file leaf-file-name="Creat_Square.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Square.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="43" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2397">
+            <state line="296" column="151" selection-start="14914" selection-end="14914" vertical-scroll-proportion="0.0" vertical-offset="4596" max-vertical-offset="5474">
               <folding>
-                <element signature="e#194#204#0" expanded="true" />
+                <marker date="1541860951299" expanded="true" signature="7404:15362" placeholder="..." />
+                <marker date="1541860951299" expanded="true" signature="14423:15362" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shape.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shape.py">
+      <file leaf-file-name="Create_Circle.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Create_Circle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Shape_Func.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Shape_Func.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="29" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.0" vertical-offset="2386" max-vertical-offset="3094">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Shape_Func_support.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Shape_Func_support.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="38" selection-start="759" selection-end="759" vertical-scroll-proportion="-0.20132013" vertical-offset="717" max-vertical-offset="1785">
+            <state line="295" column="150" selection-start="14906" selection-end="14906" vertical-scroll-proportion="0.0" vertical-offset="4732" max-vertical-offset="5457">
               <folding>
-                <element signature="e#195#205#0" expanded="true" />
+                <marker date="1541860951369" expanded="true" signature="7403:15352" placeholder="..." />
+                <marker date="1541860951369" expanded="true" signature="14418:15352" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Create_Ellipse.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Create_Ellipse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="358" column="172" selection-start="18385" selection-end="18385" vertical-scroll-proportion="0.0" vertical-offset="5650" max-vertical-offset="6528">
+              <folding>
+                <marker date="1541860951239" expanded="true" signature="7460:18868" placeholder="..." />
+                <marker date="1541860951239" expanded="true" signature="17832:18868" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creat_Equ_tri.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Equ_tri.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="295" column="151" selection-start="15052" selection-end="15086" vertical-scroll-proportion="0.0" vertical-offset="4749" max-vertical-offset="5474">
+              <folding>
+                <element signature="e#191#201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creat_Isos_Tri.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Isos_Tri.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="316" column="213" selection-start="16042" selection-end="16042" vertical-scroll-proportion="0.0" vertical-offset="5259" max-vertical-offset="6137">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data_Shapes.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data_Shapes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="22" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1207">
+              <folding>
+                <marker date="1541859499673" expanded="true" signature="709:929" placeholder="..." />
+                <marker date="1541859499673" expanded="true" signature="957:1136" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creat_Parallelogra.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Parallelogra.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="318" column="197" selection-start="16043" selection-end="16043" vertical-scroll-proportion="0.0" vertical-offset="4987" max-vertical-offset="5746">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creat_poly.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Creat_poly.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="262" column="19" selection-start="13124" selection-end="13124" vertical-scroll-proportion="0.5579632" vertical-offset="3939" max-vertical-offset="4862">
+              <folding>
+                <element signature="e#191#201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Creat_Rectangle.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Creat_Rectangle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="352" column="172" selection-start="18241" selection-end="18241" vertical-scroll-proportion="0.0" vertical-offset="5680" max-vertical-offset="6443">
+              <folding>
+                <element signature="e#191#201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,36 +154,36 @@
         <option value="$PROJECT_DIR$/test_2.py" />
         <option value="$PROJECT_DIR$/temp_sup.py" />
         <option value="$PROJECT_DIR$/test3.py" />
-        <option value="$PROJECT_DIR$/Data_Shapes.py" />
-        <option value="$PROJECT_DIR$/hide.py" />
         <option value="$PROJECT_DIR$/Creat_Square_support.py" />
         <option value="$PROJECT_DIR$/temp.py" />
+        <option value="$PROJECT_DIR$/Creat_Rectangle_support.py" />
+        <option value="$PROJECT_DIR$/ClosedCurve.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Main_GUI_support.py" />
+        <option value="$PROJECT_DIR$/Shape_Func.py" />
+        <option value="$PROJECT_DIR$/Shape_Func_support.py" />
+        <option value="$PROJECT_DIR$/hide.py" />
+        <option value="$PROJECT_DIR$/Circle.py" />
+        <option value="$PROJECT_DIR$/Data_Shapes.py" />
+        <option value="$PROJECT_DIR$/Ellipse.py" />
+        <option value="$PROJECT_DIR$/Polygon.py" />
+        <option value="$PROJECT_DIR$/Rectangle.py" />
+        <option value="$PROJECT_DIR$/Parallelogram.py" />
+        <option value="$PROJECT_DIR$/Equilateral_Triangle.py" />
+        <option value="$PROJECT_DIR$/Isosceles_tri.py" />
         <option value="$PROJECT_DIR$/Right_Triangle.py" />
         <option value="$PROJECT_DIR$/Shape.py" />
-        <option value="$PROJECT_DIR$/Isosceles_tri.py" />
         <option value="$PROJECT_DIR$/Square.py" />
         <option value="$PROJECT_DIR$/Main_GUI.py" />
-        <option value="$PROJECT_DIR$/Creat_Rectangle_support.py" />
-        <option value="$PROJECT_DIR$/Creat_Right_Tri.py" />
-        <option value="$PROJECT_DIR$/Creat_Rectangle.py" />
         <option value="$PROJECT_DIR$/Creat_Equ_tri.py" />
         <option value="$PROJECT_DIR$/Creat_Isos_Tri.py" />
-        <option value="$PROJECT_DIR$/Creat_Square.py" />
-        <option value="$PROJECT_DIR$/Parallelogram.py" />
-        <option value="$PROJECT_DIR$/Polygon.py" />
-        <option value="$PROJECT_DIR$/Equilateral_Triangle.py" />
-        <option value="$PROJECT_DIR$/Rectangle.py" />
-        <option value="$PROJECT_DIR$/Circle.py" />
-        <option value="$PROJECT_DIR$/Ellipse.py" />
         <option value="$PROJECT_DIR$/Creat_Parallelogra.py" />
-        <option value="$PROJECT_DIR$/Create_Ellipse.py" />
-        <option value="$PROJECT_DIR$/ClosedCurve.py" />
+        <option value="$PROJECT_DIR$/Creat_Rectangle.py" />
+        <option value="$PROJECT_DIR$/Creat_Right_Tri.py" />
+        <option value="$PROJECT_DIR$/Creat_Square.py" />
         <option value="$PROJECT_DIR$/Create_Circle.py" />
-        <option value="$PROJECT_DIR$/Shape_Func_support.py" />
-        <option value="$PROJECT_DIR$/Shape_Func.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/Main_GUI_support.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Create_Ellipse.py" />
         <option value="$PROJECT_DIR$/Creat_poly.py" />
       </list>
     </option>
@@ -198,7 +257,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Main_GUI">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,24 +271,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Holydays_Project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Holydays_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -284,6 +325,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Holydays_Project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Creat_Isos_Tri.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Data_Shapes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Holydays_Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Shapes.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -490,18 +549,18 @@
       <item index="2" class="java.lang.String" itemvalue="Python.Creat_Right_Tri" />
       <item index="3" class="java.lang.String" itemvalue="Python.Main" />
       <item index="4" class="java.lang.String" itemvalue="Python.test" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test3" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Shape_Func" />
-      <item index="7" class="java.lang.String" itemvalue="Python.Main_GUI_support" />
-      <item index="8" class="java.lang.String" itemvalue="Python.Creat_Isos_Tri" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Shape_Func" />
+      <item index="6" class="java.lang.String" itemvalue="Python.Main_GUI_support" />
+      <item index="7" class="java.lang.String" itemvalue="Python.Creat_Isos_Tri" />
+      <item index="8" class="java.lang.String" itemvalue="Python.Data_Shapes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Shape_Func" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Creat_Isos_Tri" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Main_GUI_support" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Data_Shapes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Shape_Func" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Creat_Isos_Tri" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Main_GUI_support" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +586,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3340358" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3340358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3340358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,7 +619,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="141" column="11" selection-start="5955" selection-end="5955" vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="3689">
           <folding>
-            <element signature="e#191#201#0" expanded="true" />
+            <element signature="e#191#201#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,7 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="60" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1972">
           <folding>
-            <element signature="e#194#204#0" expanded="true" />
+            <element signature="e#194#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -583,18 +642,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="19" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main_GUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="53" selection-start="7300" selection-end="7300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3689">
           <folding>
-            <element signature="e#191#201#0" expanded="true" />
+            <element signature="e#191#201#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,7 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="60" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1972">
           <folding>
-            <element signature="e#194#204#0" expanded="true" />
+            <element signature="e#194#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,18 +669,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="19" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0" vertical-offset="597" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main_GUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="203" column="0" selection-start="8053" selection-end="8053" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
           <folding>
-            <element signature="e#191#201#0" expanded="true" />
+            <element signature="e#191#201#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +682,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="918">
           <folding>
-            <element signature="e#194#204#0" expanded="true" />
+            <element signature="e#194#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -651,124 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="54" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp_sup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="22" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1887" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="30" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.0" vertical-offset="1077" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="7" selection-start="2162" selection-end="2162" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="7378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Right_Triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="641" selection-end="641" vertical-scroll-proportion="0.5049505" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Isosceles_tri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="455" selection-end="455" vertical-scroll-proportion="0.33663365" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Square.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Creat_Square.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="6851" selection-end="6851" vertical-scroll-proportion="0.36138615" vertical-offset="1532" max-vertical-offset="5372">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Heights/PortableApps/PortablePython2.7.6.1/App/Lib/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1868" column="11" selection-start="76527" selection-end="76527" vertical-scroll-proportion="1.090759" vertical-offset="31095" max-vertical-offset="64617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rectangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parallelogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="681" selection-end="681" vertical-scroll-proportion="0.4768977" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Equilateral_Triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="405" selection-end="405" vertical-scroll-proportion="0.27062705" vertical-offset="57" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Creat_Parallelogra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="302" column="24" selection-start="15203" selection-end="15203" vertical-scroll-proportion="1.2425742" vertical-offset="4381" max-vertical-offset="5661">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Creat_Equ_tri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="23" selection-start="0" selection-end="15321" vertical-scroll-proportion="0.0" vertical-offset="4086" max-vertical-offset="5355">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Create_Ellipse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="12" selection-start="7379" selection-end="7379" vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="6426">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClosedCurve.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="15" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
@@ -776,9 +703,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Create_Circle.py">
+    <entry file="file://F:/Heights/PortableApps/PortablePython2.7.6.1/App/Lib/lib-tk/Tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="295" column="47" selection-start="14979" selection-end="14979" vertical-scroll-proportion="-9.884615" vertical-offset="4758" max-vertical-offset="5355">
+        <state line="1063" column="25" selection-start="42842" selection-end="42842" vertical-scroll-proportion="0.27722773" vertical-offset="17903" max-vertical-offset="64617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main_GUI_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="23" selection-start="5124" selection-end="5124" vertical-scroll-proportion="4.881188" vertical-offset="0" max-vertical-offset="3468">
+          <folding>
+            <element signature="e#194#204#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shape_Func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="107" selection-start="6170" selection-end="6170" vertical-scroll-proportion="0.5231023" vertical-offset="2267" max-vertical-offset="2873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="201" selection-end="201" vertical-scroll-proportion="0.04620462" vertical-offset="91" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shape_Func_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="50" selection-start="1860" selection-end="2041" vertical-scroll-proportion="0.38283828" vertical-offset="1111" max-vertical-offset="2023">
+          <folding>
+            <element signature="e#195#205#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Circle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="150" selection-end="445" vertical-scroll-proportion="0.39273927" vertical-offset="0" max-vertical-offset="606">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ellipse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="31" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Equilateral_Triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Isosceles_tri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Polygon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parallelogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="168" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Square.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="429" selection-end="429" vertical-scroll-proportion="0.23943663" vertical-offset="0" max-vertical-offset="923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rectangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="492" selection-end="492" vertical-scroll-proportion="0.276273" vertical-offset="0" max-vertical-offset="923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Right_Triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="475" selection-end="475" vertical-scroll-proportion="0.25785482" vertical-offset="0" max-vertical-offset="923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main_GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="68" selection-start="10595" selection-end="10595" vertical-scroll-proportion="0.0" vertical-offset="3553" max-vertical-offset="4335">
+          <folding>
+            <element signature="e#191#201#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creat_Equ_tri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="151" selection-start="15052" selection-end="15086" vertical-scroll-proportion="0.0" vertical-offset="4749" max-vertical-offset="5474">
+          <folding>
+            <element signature="e#191#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creat_Isos_Tri.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="316" column="213" selection-start="16042" selection-end="16042" vertical-scroll-proportion="0.0" vertical-offset="5259" max-vertical-offset="6137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creat_Parallelogra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="318" column="197" selection-start="16043" selection-end="16043" vertical-scroll-proportion="0.0" vertical-offset="4987" max-vertical-offset="5746">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creat_Rectangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="352" column="172" selection-start="18241" selection-end="18241" vertical-scroll-proportion="0.0" vertical-offset="5680" max-vertical-offset="6443">
           <folding>
             <element signature="e#191#201#0" expanded="true" />
           </folding>
@@ -787,137 +855,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Creat_Right_Tri.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="0" selection-start="18729" selection-end="18729" vertical-scroll-proportion="0.6072607" vertical-offset="5820" max-vertical-offset="6426">
+        <state line="358" column="172" selection-start="18532" selection-end="18532" vertical-scroll-proportion="0.0" vertical-offset="5673" max-vertical-offset="6545">
           <folding>
             <element signature="e#191#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Creat_Square.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="296" column="151" selection-start="14914" selection-end="14914" vertical-scroll-proportion="0.0" vertical-offset="4596" max-vertical-offset="5474">
+          <folding>
+            <marker date="1541860951299" expanded="true" signature="7404:15362" placeholder="..." />
+            <marker date="1541860951299" expanded="true" signature="14423:15362" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Create_Circle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="150" selection-start="14906" selection-end="14906" vertical-scroll-proportion="0.0" vertical-offset="4732" max-vertical-offset="5457">
+          <folding>
+            <marker date="1541860951369" expanded="true" signature="7403:15352" placeholder="..." />
+            <marker date="1541860951369" expanded="true" signature="14418:15352" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Create_Ellipse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="358" column="172" selection-start="18385" selection-end="18385" vertical-scroll-proportion="0.0" vertical-offset="5650" max-vertical-offset="6528">
+          <folding>
+            <marker date="1541860951239" expanded="true" signature="7460:18868" placeholder="..." />
+            <marker date="1541860951239" expanded="true" signature="17832:18868" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Data_Shapes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="97" selection-end="106" vertical-scroll-proportion="0.018151816" vertical-offset="108" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Circle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="12" selection-start="771" selection-end="771" vertical-scroll-proportion="0.78547853" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Creat_Rectangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="37" selection-start="17666" selection-end="18429" vertical-scroll-proportion="0.0" vertical-offset="5680" max-vertical-offset="6324">
+        <state line="50" column="22" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1207">
           <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="297" selection-end="320" vertical-scroll-proportion="0.25247526" vertical-offset="0" max-vertical-offset="606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="175" selection-end="461" vertical-scroll-proportion="0.5610561" vertical-offset="0" max-vertical-offset="606">
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding>
-            <marker date="1541853948733" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main_GUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="21" selection-start="8072" selection-end="8072" vertical-scroll-proportion="0.0" vertical-offset="3032" max-vertical-offset="3893">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ellipse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="583" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="50" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="2261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Polygon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Creat_Isos_Tri.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="40" selection-start="15023" selection-end="15023" vertical-scroll-proportion="0.0" vertical-offset="4794" max-vertical-offset="5967">
-          <folding>
-            <element signature="e#191#201#0" expanded="true" />
+            <marker date="1541859499673" expanded="true" signature="709:929" placeholder="..." />
+            <marker date="1541859499673" expanded="true" signature="957:1136" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Creat_poly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="31" selection-start="12304" selection-end="12304" vertical-scroll-proportion="6.760726" vertical-offset="0" max-vertical-offset="4573">
+        <state line="262" column="19" selection-start="13124" selection-end="13124" vertical-scroll-proportion="0.5579632" vertical-offset="3939" max-vertical-offset="4862">
           <folding>
             <element signature="e#191#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main_GUI_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="43" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="2397">
-          <folding>
-            <element signature="e#194#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shape_Func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="29" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.0" vertical-offset="2386" max-vertical-offset="3094">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shape_Func_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="38" selection-start="759" selection-end="759" vertical-scroll-proportion="-0.20132013" vertical-offset="717" max-vertical-offset="1785">
-          <folding>
-            <element signature="e#195#205#0" expanded="true" />
           </folding>
         </state>
       </provider>

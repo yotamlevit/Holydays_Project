@@ -11,6 +11,7 @@ class Polygon(Shape):
         the class get from the user to create an polygon
         ;color: is the color that the user wants to
         fill the polygon with
+        ;poly: the line around the shape color
         """
         super(Polygon, self).__init__(color, poly)
         self.dot = dot

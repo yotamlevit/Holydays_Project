@@ -345,13 +345,18 @@ class Creat_Ellipse:
 
 
     def button_pres(self):
+        """
+        operating when the user clicked on the create
+        button to create a shape or to change it
+        if values are incorrect show msg in the screen
+        """
         x = self.x_start.get()
         y = self.y_start.get()
         side1 = self.side_one.get()
         side2 = self.side_two.get()
         color = self.Color.get()
         line = self.line.get()
-        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color in COLORS and line in COLORS:
+        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color in COLORS and line in COLORS and int(x) < 1001 and int(y) < 916:
             if self.shape is not None:
                 self.canv.delete(self.shape)
                 self.data.delete_value(self.shape)
@@ -359,6 +364,8 @@ class Creat_Ellipse:
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)
             destroy_Creat_Ellipse()
+        else:
+            self.txt_creat_Ellipse.configure(text="invalid values")
 
 
 

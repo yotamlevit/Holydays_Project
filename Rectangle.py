@@ -6,10 +6,13 @@ class Rectangle(Polygon):
     def __init__(self, x=100, y=100, side1=20, side2=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
-        ;values: is a list of the values that the class get from
-        the user to create a rectangle, including start point,
-        the big side length and the small side length
-        ;color: is the color that the user wants to fill the rectangle with
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;color: is the color that the user
+        wants to fill the shape with
+        ;poly: the line color around the shape
+        ;side1: a Rectangle side
+        ;side2: a Rectangle side
         """
         dot = [x, y,
                x + side1, y,

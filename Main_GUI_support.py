@@ -46,6 +46,15 @@ except ImportError:
 
 
 def click(root, data, canvas, shape):
+    """
+    operationg when the user double clicked on a shape
+    the function finds the shape kind and open the mode
+    mode (the change shape mode) for the shape
+    ;root: the screens foot
+    ;data: the data base
+    ;canvas: the canvas to paint on
+    shape: the choosed shape by the user
+    """
     obj = data.get_obj(shape[0])
     if type(obj[0]) is Right_Tri:
         Creat_Right_Tri.create_Creat_Right_Teiangle(root, data, canvas, shape[0])
@@ -66,52 +75,106 @@ def click(root, data, canvas, shape):
     sys.stdout.flush()
 
 def creat_circle(root, data, canvas):
+    """
+    open the create circle screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Create_Circle.create_Creat_Circle(root, data, canvas)
     print('Main_GUI_support.creat_circle')
     sys.stdout.flush()
 
 
 def creat_ellipse(root, data, canvas):
+    """
+    open the create ellipse screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Create_Ellipse.create_Creat_Ellipse(root, data, canvas)
     print('Main_GUI_support.creat_ellipse')
     sys.stdout.flush()
 
 
 def creat_equilateral_triangle(root, data, canvas):
+    """
+    open the create Equilateral Triangle screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Equ_tri.create_Creat_Equilateral_Tri(root, data,canvas)
     print('Main_GUI_support.creat_equilateral_triangle')
     sys.stdout.flush()
 
 
 def creat_isos_tri(root, data, canvas):
+    """
+    open the create Isosceles Triangle screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Isos_Tri.create_Creat_Isosceles_Triangle(root, data, canvas)
     print('Main_GUI_support.creat_isos_tri')
     sys.stdout.flush()
 
 
 def creat_parallelogram(root, data, canvas):
+    """
+    open the create Parallelogram screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Parallelogra.create_Create_Parallelogram(root, data, canvas)
     print('Main_GUI_support.creat_parallelogram')
     sys.stdout.flush()
 
 
 def creat_rectangle(root, data, canvas):
+    """
+    open the create Rectangle screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Rectangle.create_Creat_Rectangle(root, data, canvas)
     print('Main_GUI_support.creat_rectangle')
     sys.stdout.flush()
 
 
 def creat_right_tri(root, data, canvas):
+    """
+    open the create Right triangle screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Right_Tri.create_Creat_Right_Teiangle(root, data, canvas)
     print('Main_GUI_support.creat_right_tri')
     sys.stdout.flush()
 
 def creat_square(root, data, canvas):
+    """
+    open the create square screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_Square.create_Creat_Square(root, data, canvas)
     print('Main_GUI_support.creat_square')
     sys.stdout.flush()
 
 def creat_poligon(root, data, canvas):
+    """
+    open the create polygon screen for the user
+    ;root: the screens root
+    ;data: the database
+    ;canvas: the canvas to paint on
+    """
     Creat_poly.create_Create_Polygon_(root, data, canvas)
     print('Main_GUI_support.creat_poligon')
     sys.stdout.flush()

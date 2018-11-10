@@ -24,16 +24,3 @@ class Shape:
     @abstractmethod
     def calc_area(self):
         pass
-
-    def move_me(self, x, y):
-        if self.move:
-            print m
-
-    def animation_on(self):
-        self.ani = True
-
-    def animation_off(self):
-        self.ani = False
-
-    def set_fill_color(self, color):
-        self.color = color

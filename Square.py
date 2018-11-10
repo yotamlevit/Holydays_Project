@@ -6,9 +6,12 @@ class Square(Polygon):
     def __init__(self, x=10, y=10, side=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
-        ;values: is a list of the values that the class get from the user
-        to create a square, including start point and the side's length
-        ;color: is the color that the user wants to fill the square with
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;color: is the color that the user
+        wants to fill the shape with
+        ;poly: the line color around the shape
+        ;side: a square`s side
         """
         dot = [x, y,
                x + side, y,

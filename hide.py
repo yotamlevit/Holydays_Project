@@ -19,14 +19,12 @@ except ImportError:
     import tkinter.ttk as ttk
     py3 = True
 
-import hide_support
 
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
     top = New_Toplevel (root)
-    hide_support.init(root, top)
     root.mainloop()
 
 w = None
@@ -36,7 +34,6 @@ def create_New_Toplevel(root, canvas, shape, data, *args, **kwargs):
     rt = root
     w = Toplevel (root)
     top = New_Toplevel (canvas, shape, data, w)
-    hide_support.init(w, top, *args, **kwargs)
     return (w, top)
 
 def destroy_New_Toplevel():
@@ -78,9 +75,17 @@ class New_Toplevel:
         self.show.bind('<Button-1>',lambda e:self.show_shape(canvas, shape, data))
 
     def show_shape(self, canvas, shape, data):
-        obj = data.get_obj(shape[0])
+        """
+        returns the shape to the screen
+        (draw it again)
+        ;shape: the shapes canvas value(id)
+            and the shape`s id in the database
+        ;data: the database
+        ;canvas: the canvas
+        """
+        obj = data.get_obj(shape)
         a = obj[0].draw_me(canvas)
-        data.delete_value(shape[0])
+        data.delete_value(shape)
         data.set_value(a, obj)
         destroy_New_Toplevel()
 

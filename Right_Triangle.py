@@ -6,11 +6,13 @@ class Right_Tri(Polygon):
     def __init__(self, x=10, y=10, side1=10, side2=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
-        ;values: is a list of the values that the class get from the user
-        to create a right triangle, including start point, side
-        1 length and side 2 length
-        ;color: is the color that the user wants to fill the
-        right triangle with
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;color: is the color that the user
+        wants to fill the shape with
+        ;poly: the line color around the shape
+        ;side1: a triangle`s side
+        ;side2: a triangle`s side
         """
         self.area = side1*side2/2
         dot = [x, y, x,

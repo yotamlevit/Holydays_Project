@@ -231,20 +231,37 @@ class Create_Polygon_:
 
 
     def button_pres(self):
+        """
+        operating when the user clicked on the create
+        button to create a shape or to change it
+        if values are incorrect show msg in the screen
+        """
         dot = self.dot.get()
         color = self.color.get()
         line = self.line.get()
         if self.check_poly(dot) and color is not "" and color in COLORS and line in COLORS:
-            if self.shape is not None:
-                self.canv.delete(self.shape)
-                self.data.delete_value(self.shape)
             dots = ast.literal_eval(dot)
-            obj = [Polygon(dots, color, line), [dots, color, line]]
-            obj_val = obj[0].draw_me(self.canv)
-            self.data.set_value(obj_val, obj)
-            destroy_Create_Polygon_()
+            if dots[0] < 1001 and dots[1] < 916:
+                if self.shape is not None:
+                    self.canv.delete(self.shape)
+                    self.data.delete_value(self.shape)
+                dots = ast.literal_eval(dot)
+                obj = [Polygon(dots, color, line), [dots, color, line]]
+                obj_val = obj[0].draw_me(self.canv)
+                self.data.set_value(obj_val, obj)
+                destroy_Create_Polygon_()
+            else:
+                self.txt_create.configure(text="invalid values")
+        else:
+            self.txt_create.configure(text="invalid values")
 
     def check_poly(self, dot):
+        """
+        check if the given values can be used to
+        create the shape
+        ;dot: a string that have the dots to create
+        the polygon
+        """
         lis = ast.literal_eval(dot)
         for element in lis:
             if type(element) is not int and type(element) is not float:

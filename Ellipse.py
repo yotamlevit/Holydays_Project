@@ -6,11 +6,13 @@ class Ellipse(ClosedCurve):
     def __init__(self, x=200, y=500, hor_rad=20, rad=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
-        ;values: is a list of the values that the class get from
-        the user to create an ellipse, including cernter
-        semi-major axe and the emi-minor axe
-        ;color: is the color that the user wants to
-        fill the ellipse with
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;rad: the vertical radius, semi-major axe
+        ;hor_rad: the horizontal radius, emi-minor axe
+        ;color: is the color that the user
+        wants to fill the shape with
+        ;poly: the line color around the shape
         """
         dot = [x-hor_rad,
                y-rad,

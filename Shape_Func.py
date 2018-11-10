@@ -152,19 +152,6 @@ class Shape_Change:
         self.hide_shape.configure(width=117)
         self.hide_shape.bind('<Button-1>',lambda e:Shape_Func_support.hide_shape(top, canvas, shape, data))
 
-        self.move_shape = Button(top)
-        self.move_shape.place(relx=0.029, rely=0.026, height=84, width=117)
-        self.move_shape.configure(activebackground="#d9d9d9")
-        self.move_shape.configure(activeforeground="#000000")
-        self.move_shape.configure(background="#d9d9d9")
-        self.move_shape.configure(disabledforeground="#a3a3a3")
-        self.move_shape.configure(foreground="#000000")
-        self.move_shape.configure(highlightbackground="#d9d9d9")
-        self.move_shape.configure(highlightcolor="black")
-        self.move_shape.configure(pady="0")
-        self.move_shape.configure(text='''Make Shape Move''')
-        self.move_shape.bind('<Button-1>',lambda e:Shape_Func_support.move_shape(canvas, shape, data))
-
 
 
 

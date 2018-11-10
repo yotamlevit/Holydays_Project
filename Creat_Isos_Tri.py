@@ -303,13 +303,18 @@ class Creat_Isosceles_Triangle:
             self.txt_isosceles_triangle.configure(text='''Mode Isosceles Triangle''')
 
     def button_pres(self):
+        """
+        operating when the user clicked on the create
+        button to create a shape or to change it
+        if values are incorrect show msg in the screen
+        """
         x = self.x_start.get()
         y = self.y_start.get()
         side = self.side.get()
         base = self.base.get()
         color = self.color.get()
         line = self.line.get()
-        if x.isdigit() and y.isdigit() and side.isdigit() and base.isdigit() and color is not "" and self.can_be_isos(int(base), int(side)) and color in COLORS and line in COLORS:
+        if x.isdigit() and y.isdigit() and side.isdigit() and base.isdigit() and color is not "" and self.can_be_isos(int(base), int(side)) and color in COLORS and line in COLORS and int(x) < 1001 and int(y) < 916:
             if self.shape is not None:
                 self.canv.delete(self.shape)
                 self.data.delete_value(self.shape)
@@ -320,6 +325,12 @@ class Creat_Isosceles_Triangle:
 
 
     def can_be_isos(self, base, side):
+        """
+        check if the values that the usere gave
+         can be used to create the shape
+         ;base: the triangle`s base
+         ;sife: the tiangle`s side
+        """
         side1 = side + 0.0
         base1 = base + 0.0
         is_isos = False

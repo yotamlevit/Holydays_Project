@@ -3,15 +3,17 @@ import math
 
 BLACK = "black"
 class Isosceles_Tri(Polygon):
-    """
-    an initializer for the class
-    ;values: is a list of the values that the class get from the user
-     to create an isosceles triangle, including start point,
-     the base length and the length of the 2 other sides
-    ;color: is the color that the user wants to
-     fill the isosceles triangle with
-    """
     def __init__(self, x=10, y=10, base=10, side=50, color=BLACK, poly=BLACK):
+        """
+        an initializer for the class
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;color: is the color that the user wants to
+        fill the isosceles triangle with
+        ;poly: the line color around the shape
+        ;side: the triangle`s side
+        ;base: the triangle`s base
+        """
         side += 0.0
         base += 0.0
         hight = math.sin(math.acos((base/2)

@@ -30,6 +30,13 @@ except ImportError:
 
 
 def calc_shape(txt, shape, data):
+    """
+    calculate the shape`s area except polygon
+    ;txt: the lable to write the area on
+    ;shape: the shapes canvas value(id)
+            and the shape`s id in the database
+    ;data: the database
+    """
     global was_hidden
     if not was_hidden:
         obj = data.get_obj(shape)
@@ -44,6 +51,14 @@ def calc_shape(txt, shape, data):
         destroy_window()
 
 def delete_shape(canvas, shape, data):
+    """
+    deletes the shape from the databaser and from
+    the canvas
+    ;shape: the shapes canvas value(id)
+            and the shape`s id in the database
+    ;data: the database
+    ;canvas: the canvas
+    """
     global was_hidden
     if not was_hidden:
         canvas.delete(shape)
@@ -54,8 +69,16 @@ def delete_shape(canvas, shape, data):
     else:
         destroy_window()
 
-
 def hide_shape(root, canvas, shape, data):
+    """
+    delete the shape from the screen(canvas)
+    but not from the database
+    ;shape: the shapes canvas value(id)
+            and the shape`s id in the database
+    ;data: the database
+    ;canvas: the canvas
+    ;root: the screens root to open another screen
+    """
     global was_hidden
     if not was_hidden:
         canvas.delete(shape)
@@ -63,15 +86,6 @@ def hide_shape(root, canvas, shape, data):
         print('Shape_Func_support.hide_shape')
         was_hidden = True
         sys.stdout.flush()
-    else:
-        destroy_window()
-
-def move_shape(canvas, shape, data):
-    global was_hidden
-    if not was_hidden:
-        global is_move
-        is_move = True
-        pass
     else:
         destroy_window()
 

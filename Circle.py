@@ -6,11 +6,12 @@ class Circle(ClosedCurve):
     def __init__(self, x=100, y=200, rad=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
-        ;values: is a list of the values that the class
-        get from the user to create a circle,
-        including cernter and radius
+        ;x: the x value center of the circle
+        ;y: the x value center of the circle
+        ;rad: the radius
         ;color: is the color that the user
         wants to fill the circle with
+        ;poly: the line color around the shape
         """
         dot = [x-rad,
                y-rad,
