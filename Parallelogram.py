@@ -1,8 +1,8 @@
 from Polygon import *
 
-
+BLACK = "black"
 class Parallelogram(Polygon):
-    def __init__(self, x, y, side1, side2, angle, color):
+    def __init__(self, x=10, y=10, side1=50, side2=50, angle=45, color=BLACK, poly=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from the user
@@ -22,7 +22,7 @@ class Parallelogram(Polygon):
                    math.sin(math.radians(angle-90)))
         dot.append((y+side2 *
                     math.cos(math.radians(angle-90))))
-        super(Parallelogram, self).__init__(dot, color)
+        super(Parallelogram, self).__init__(dot, color, poly)
 
     def calc_area(self):
         """

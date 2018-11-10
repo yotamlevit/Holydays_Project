@@ -1,7 +1,7 @@
 from Polygon import *
 import math
 
-
+BLACK = "black"
 class Isosceles_Tri(Polygon):
     """
     an initializer for the class
@@ -11,7 +11,7 @@ class Isosceles_Tri(Polygon):
     ;color: is the color that the user wants to
      fill the isosceles triangle with
     """
-    def __init__(self, x, y, base, side, color):
+    def __init__(self, x=10, y=10, base=10, side=50, color=BLACK, poly=BLACK):
         side += 0.0
         base += 0.0
         hight = math.sin(math.acos((base/2)
@@ -22,7 +22,7 @@ class Isosceles_Tri(Polygon):
                x - base/2,
                y + hight]
         self.area = hight * dot[2]/2
-        super(Isosceles_Tri, self).__init__(dot, color)
+        super(Isosceles_Tri, self).__init__(dot, color, poly)
 
     def calc_area(self):
         """

@@ -13,7 +13,7 @@ temp = ""
 for word in path_to_tool:
     temp += word + "/"
 path_to_tool = temp[:-1]
-from Isosceles_tri import *
+from Equilateral_Triangle import *
 COLORS=['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old lace',
 'linen', 'antique white', 'papaya whip', 'blanched almond', 'bisque', 'peach puff',
 'navajo white', 'lemon chiffon', 'mint cream', 'azure', 'alice blue', 'lavender',
@@ -24,7 +24,7 @@ COLORS=['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old 
 'light blue', 'powder blue', 'pale turquoise', 'dark turquoise', 'medium turquoise', 'turquoise',
 'cyan', 'light cyan', 'cadet blue', 'medium aquamarine', 'aquamarine', 'dark green', 'dark olive green',
 'dark sea green', 'sea green', 'medium sea green', 'light sea green', 'pale green', 'spring green',
-'lawn green', 'medium spring green', 'green yellow', 'lime green', 'yellow green',
+'lawn green', 'green', 'medium spring green', 'green yellow', 'lime green', 'yellow green',
 'forest green', 'olive drab', 'dark khaki', 'khaki', 'pale goldenrod', 'light goldenrod yellow',
 'light yellow', 'yellow', 'gold', 'light goldenrod', 'goldenrod', 'dark goldenrod', 'rosy brown',
 'indian red', 'saddle brown', 'sandy brown',
@@ -102,30 +102,29 @@ except ImportError:
     import tkinter.ttk as ttk
     py3 = True
 
-
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
-    top = Creat_Isosceles_Triangle (root)
+    top = Creat_Equilateral_Tri (root)
     root.mainloop()
 
 w = None
-def create_Creat_Isosceles_Triangle(root, data_obj, canvas, shape=None, *args, **kwargs):
+def create_Creat_Equilateral_Tri(root, data_obj, canvas, shape=None, *args, **kwargs):
     '''Starting point when module is imported by another program.'''
     global w, w_win, rt
     rt = root
     w = Toplevel (root)
-    top = Creat_Isosceles_Triangle (data_obj, canvas, shape, w)
+    top = Creat_Equilateral_Tri (data_obj, canvas, shape, w)
     return (w, top)
 
-def destroy_Creat_Isosceles_Triangle():
+def destroy_Creat_Equilateral_Tri():
     global w
     w.destroy()
     w = None
 
 
-class Creat_Isosceles_Triangle:
+class Creat_Equilateral_Tri:
     def __init__(self, data_obj, canvas, shape, top=None):
         '''This class configures and populates the toplevel window.
            top is the toplevel containing window.'''
@@ -143,25 +142,25 @@ class Creat_Isosceles_Triangle:
         top.configure(background="#d9d9d9")
 
         if shape is None:
-            top.title("Creat Isosceles Triangle")
+            top.title("Creat Equilateral Triangle")
         else:
-            top.title("Mode Isosceles Triangle")
+            top.title("Mode Equilateral Triangle")
             Shape_Func.create_Shape_Change(top, data_obj, canvas, shape)
 
         self.data = data_obj
         self.canv = canvas
         self.shape = shape
 
-        self.txt_isosceles_triangle = Label(top)
-        self.txt_isosceles_triangle.place(relx=0.062, rely=0.044, height=21
+        self.txt_Equilateral_Tri = Label(top)
+        self.txt_Equilateral_Tri.place(relx=0.062, rely=0.044, height=21
                 , width=129)
-        self.txt_isosceles_triangle.configure(background="#d9d9d9")
-        self.txt_isosceles_triangle.configure(disabledforeground="#a3a3a3")
-        self.txt_isosceles_triangle.configure(foreground="#000000")
-        self.txt_isosceles_triangle.configure(text='''Creat Isosceles Triangle''')
+        self.txt_Equilateral_Tri.configure(background="#d9d9d9")
+        self.txt_Equilateral_Tri.configure(disabledforeground="#a3a3a3")
+        self.txt_Equilateral_Tri.configure(foreground="#000000")
+        self.txt_Equilateral_Tri.configure(text='''Creat Equilateral_Tri''')
 
         self.line = Entry(top)
-        self.line.place(relx=0.28, rely=0.200, height=20, relwidth=0.197)
+        self.line.place(relx=0.277, rely=0.442,height=20, relwidth=0.197)
         self.line.configure(background="white")
         self.line.configure(disabledforeground="#a3a3a3")
         self.line.configure(font=font10)
@@ -173,7 +172,7 @@ class Creat_Isosceles_Triangle:
         self.line.configure(selectforeground="black")
 
         self.txt_line = Label(top)
-        self.txt_line.place(relx=0.031, rely=0.19, height=21, width=55)
+        self.txt_line.place(relx=0.031, rely=0.442, height=21, width=55)
         self.txt_line.configure(activebackground="#f9f9f9")
         self.txt_line.configure(activeforeground="black")
         self.txt_line.configure(background="#d9d9d9")
@@ -191,14 +190,6 @@ class Creat_Isosceles_Triangle:
         self.txt_side.configure(foreground="#000000")
         self.txt_side.configure(text='''Side -''')
         self.txt_side.configure(width=39)
-
-        self.txt_base = Label(top)
-        self.txt_base.place(relx=0.031, rely=0.442, height=21, width=41)
-        self.txt_base.configure(background="#d9d9d9")
-        self.txt_base.configure(disabledforeground="#a3a3a3")
-        self.txt_base.configure(foreground="#000000")
-        self.txt_base.configure(text='''Base -''')
-        self.txt_base.configure(width=41)
 
         self.Label4 = Label(top)
         self.Label4.place(relx=0.031, rely=0.575, height=21, width=77)
@@ -230,15 +221,6 @@ class Creat_Isosceles_Triangle:
         self.side.configure(foreground="#000000")
         self.side.configure(insertbackground="black")
         self.side.configure(width=64)
-
-        self.base = Entry(top)
-        self.base.place(relx=0.277, rely=0.442,height=20, relwidth=0.197)
-        self.base.configure(background="white")
-        self.base.configure(disabledforeground="#a3a3a3")
-        self.base.configure(font=font10)
-        self.base.configure(foreground="#000000")
-        self.base.configure(insertbackground="black")
-        self.base.configure(width=64)
 
         self.x_start = Entry(top)
         self.x_start.place(relx=0.277, rely=0.575,height=20, relwidth=0.197)
@@ -288,50 +270,32 @@ class Creat_Isosceles_Triangle:
         if shape is None:
             self.color.insert(0,"black")
             self.side.insert(0,"50")
-            self.base.insert(0,"50")
             self.x_start.insert(0,"300")
             self.y_start.insert(0,"300")
             self.line.insert(0, "black")
         else:
             value = self.data.get_obj(shape)[1]
-            self.color.insert(0, value[4])
+            self.color.insert(0, value[3])
             self.side.insert(0, value[2])
-            self.base.insert(0, value[3])
             self.x_start.insert(0, value[0])
             self.y_start.insert(0, value[1])
-            self.line.insert(0, value[5])
-            self.txt_isosceles_triangle.configure(text='''Mode Isosceles Triangle''')
+            self.line.insert(0, value[4])
+            self.txt_Equilateral_Tri.configure(text='''Mode Equilateral Triangle''')
 
     def button_pres(self):
         x = self.x_start.get()
         y = self.y_start.get()
         side = self.side.get()
-        base = self.base.get()
         color = self.color.get()
         line = self.line.get()
-        if x.isdigit() and y.isdigit() and side.isdigit() and base.isdigit() and color is not "" and self.can_be_isos(int(base), int(side)) and color in COLORS and line in COLORS:
+        if x.isdigit() and y.isdigit() and side.isdigit() and color is not "" and color in COLORS and line in COLORS:
             if self.shape is not None:
                 self.canv.delete(self.shape)
                 self.data.delete_value(self.shape)
-            obj = [Isosceles_Tri(int(x), int(y), int(base), int(side), color, line),[int(x), int(y), int(base), int(side), color, line]]
+            obj = [Equilateral_Triangle(int(x), int(y), int(side), color, line),[int(x), int(y), int(side), color, line]]
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)
-            destroy_Creat_Isosceles_Triangle()
-
-
-    def can_be_isos(self, base, side):
-        side1 = side + 0.0
-        base1 = base + 0.0
-        is_isos = False
-        try:
-            temp = math.sin(math.acos((base1/2) / side1))*side1
-            if temp != 0:
-                is_isos = True
-        except:
-            self.txt_name.configure(text='''Wrong values''')
-            print "Wrong values"
-        finally:
-            return is_isos
+            destroy_Creat_Equilateral_Tri()
 
 
 

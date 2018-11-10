@@ -6,7 +6,7 @@
 #    Nov 02, 2018 08:56:19 PM +0200  platform: Windows NT
 
 import sys
-from Data_Shapes import *
+import Shape_Func
 path_to_tool = sys.argv[0].split("/")
 path_to_tool.pop()
 temp = ""
@@ -15,7 +15,7 @@ for word in path_to_tool:
 path_to_tool = temp[:-1]
 #sys.path.insert(0, path_to_tool + "/" + "Shapes")
 from Right_Triangle import *
-COLORS  =['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old lace',
+COLORS=['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'old lace',
 'linen', 'antique white', 'papaya whip', 'blanched almond', 'bisque', 'peach puff',
 'navajo white', 'lemon chiffon', 'mint cream', 'azure', 'alice blue', 'lavender',
 'lavender blush', 'misty rose', 'dark slate gray', 'dim gray', 'slate gray',
@@ -25,7 +25,7 @@ COLORS  =['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'ol
 'light blue', 'powder blue', 'pale turquoise', 'dark turquoise', 'medium turquoise', 'turquoise',
 'cyan', 'light cyan', 'cadet blue', 'medium aquamarine', 'aquamarine', 'dark green', 'dark olive green',
 'dark sea green', 'sea green', 'medium sea green', 'light sea green', 'pale green', 'spring green',
-'lawn green', 'medium spring green', 'green', 'green yellow', 'lime green', 'yellow green',
+'lawn green', 'green', 'medium spring green', 'green yellow', 'lime green', 'yellow green',
 'forest green', 'olive drab', 'dark khaki', 'khaki', 'pale goldenrod', 'light goldenrod yellow',
 'light yellow', 'yellow', 'gold', 'light goldenrod', 'goldenrod', 'dark goldenrod', 'rosy brown',
 'indian red', 'saddle brown', 'sandy brown',
@@ -105,24 +105,20 @@ except ImportError:
     import tkinter.ttk as ttk
     py3 = True
 
-import Creat_Right_Tri_support
-
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
     top = Creat_Right_Teiangle (root)
-    Creat_Right_Tri_support.init(root, top)
     root.mainloop()
 
 w = None
-def create_Creat_Right_Teiangle(root, data_obj, canvas, *args, **kwargs):
+def create_Creat_Right_Teiangle(root, data_obj, canvas, shape=None, *args, **kwargs):
     '''Starting point when module is imported by another program.'''
     global w, w_win, rt
     rt = root
     w = Toplevel(root)
-    top = Creat_Right_Teiangle(data_obj, canvas, w)
-    Creat_Right_Tri_support.init(w, top, *args, **kwargs)
+    top = Creat_Right_Teiangle(data_obj, canvas, shape, w)
     return (w, top)
 
 def destroy_Creat_Right_Teiangle():
@@ -132,7 +128,7 @@ def destroy_Creat_Right_Teiangle():
 
 
 class Creat_Right_Teiangle:
-    def __init__(self, data_obj, canvas, top=None):
+    def __init__(self, data_obj, canvas, shape, top=None):
         '''This class configures and populates the toplevel window.
            top is the toplevel containing window.'''
         _bgcolor = '#d9d9d9'  # X11 color: 'gray85'
@@ -146,12 +142,17 @@ class Creat_Right_Teiangle:
             "roman -underline 0 -overstrike 0"
 
         top.geometry("310x217+618+177")
-        top.title("Creat Right Teiangle")
         top.configure(background="#d9d9d9")
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
 
+        if shape is None:
+            top.title("Creat Right Teiangle")
+        else:
+            top.title("Mode Right Teiangle")
+            Shape_Func.create_Shape_Change(top, data_obj, canvas, shape)
 
+        self.shape = shape
         self.canv = canvas
         self.data = data_obj
 
@@ -159,7 +160,29 @@ class Creat_Right_Teiangle:
         self.menubar = Menu(top,font=font9,bg=_bgcolor,fg=_fgcolor)
         top.configure(menu = self.menubar)
 
+        self.line = Entry(top)
+        self.line.place(relx=0.29, rely=0.200, height=20, relwidth=0.206)
+        self.line.configure(background="white")
+        self.line.configure(disabledforeground="#a3a3a3")
+        self.line.configure(font=font10)
+        self.line.configure(foreground="#000000")
+        self.line.configure(highlightbackground="#d9d9d9")
+        self.line.configure(highlightcolor="black")
+        self.line.configure(insertbackground="black")
+        self.line.configure(selectbackground="#c4c4c4")
+        self.line.configure(selectforeground="black")
 
+        self.txt_line = Label(top)
+        self.txt_line.place(relx=0.032, rely=0.150, height=41, width=62)
+        self.txt_line.configure(activebackground="#f9f9f9")
+        self.txt_line.configure(activeforeground="black")
+        self.txt_line.configure(background="#d9d9d9")
+        self.txt_line.configure(disabledforeground="#a3a3a3")
+        self.txt_line.configure(foreground="#000000")
+        self.txt_line.configure(highlightbackground="#d9d9d9")
+        self.txt_line.configure(highlightcolor="black")
+        self.txt_line.configure(text='''Line color''')
+        self.txt_line.configure(width=62)
 
         self.side_one = Entry(top)
         self.side_one.place(relx=0.29, rely=0.323,height=20, relwidth=0.206)
@@ -303,17 +326,39 @@ class Creat_Right_Teiangle:
         self.color.configure(highlightcolor="black")
         self.color.configure(text='''Color  ----''')
 
+        if shape is None:
+            self.Color.insert(0,"black")
+            self.side_one.insert(0,"50")
+            self.side_two.insert(0,"50")
+            self.x_start.insert(0,"300")
+            self.y_start.insert(0,"300")
+            self.line.insert(0, "black")
+        else:
+            value = self.data.get_obj(shape)[1]
+            self.Color.insert(0, value[4])
+            self.side_one.insert(0, value[2])
+            self.side_two.insert(0, value[3])
+            self.x_start.insert(0, value[0])
+            self.y_start.insert(0, value[1])
+            self.line.insert(0, value[5])
+            self.txt_creat_right_triangle.configure(text='''Mode Right Triangle''')
+
+
     def button_pres(self):
         x = self.x_start.get()
         y = self.y_start.get()
         side1 = self.side_one.get()
         side2 = self.side_two.get()
         color = self.Color.get()
-        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color in COLORS:
-            obj = [Right_Tri(int(x), int(y), int(side1), int(side2), color),[int(x), int(y), int(side1), int(side2), color]]
+        line = self.line.get()
+        if x.isdigit() and y.isdigit() and side1.isdigit() and side2.isdigit() and color is not "" and color in COLORS and line in COLORS:
+            if self.shape is not None:
+                self.canv.delete(self.shape)
+                self.data.delete_value(self.shape)
+            obj = [Right_Tri(int(x), int(y), int(side1), int(side2), color, line),[int(x), int(y), int(side1), int(side2), color, line]]
             obj_val = obj[0].draw_me(self.canv)
             self.data.set_value(obj_val, obj)
-            Creat_Right_Tri_support.destroy_window()
+            destroy_Creat_Right_Teiangle()
 
 
 

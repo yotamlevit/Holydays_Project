@@ -1,8 +1,9 @@
 from Polygon import *
 
+BLACK = "black"
 
 class Square(Polygon):
-    def __init__(self, x, y, side, color):
+    def __init__(self, x=10, y=10, side=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from the user
@@ -14,7 +15,7 @@ class Square(Polygon):
                x + side, y + side,
                x, y + side]
         self.area = side**2
-        super(Square, self).__init__(dot, color)
+        super(Square, self).__init__(dot, color, poly)
 
     def calc_area(self):
         """

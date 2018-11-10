@@ -6,7 +6,7 @@ class Shape:
 
     __metaclass__ = ABCMeta
 
-    def __init__(self, color):
+    def __init__(self, color, poly):
         """
         an initializer for the class
         ;ani: bool - animation on or off
@@ -15,6 +15,7 @@ class Shape:
         self.ani = False
         self.color = color
         self.move = True
+        self.poly = poly
 
     @abstractmethod
     def draw_me(self, canvas):

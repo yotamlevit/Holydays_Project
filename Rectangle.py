@@ -1,8 +1,9 @@
 from Polygon import *
 
+BLACK = "black"
 
 class Rectangle(Polygon):
-    def __init__(self, x, y, side1, side2, color):
+    def __init__(self, x=100, y=100, side1=20, side2=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from
@@ -15,7 +16,7 @@ class Rectangle(Polygon):
                x + side1, y + side2,
                x, y + side2]
         self.area = side1 * side2
-        super(Rectangle, self).__init__(dot, color)
+        super(Rectangle, self).__init__(dot, color, poly)
 
     def calc_area(self):
         """

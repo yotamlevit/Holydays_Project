@@ -7,13 +7,6 @@
 
 import sys
 from Data_Shapes import *
-path_to_tool = sys.argv[0].split("/")
-path_to_tool.pop()
-temp = ""
-for word in path_to_tool:
-    temp += word + "/"
-path_to_tool = temp[:-1]
-DATABASE = path_to_tool + "/" + "data.txt"
 
 try:
     from Tkinter import *
@@ -74,9 +67,6 @@ class Paint:
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
 
-
-        with open(DATABASE, "w") as file:
-            print "file cleared"
 
         self.data = DataBase()
         self.root = top
@@ -220,6 +210,7 @@ class Paint:
     def click(self, event):
         x, y = event.x, event.y
         clic_shape = self.shape_c.find_overlapping(x, y, x, y)
+        print clic_shape
         if clic_shape:
             Main_GUI_support.click(self.root, self.data, self.shape_c, clic_shape)
 

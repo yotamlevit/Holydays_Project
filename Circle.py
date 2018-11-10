@@ -1,8 +1,9 @@
 from ClosedCurve import *
 
+BLACK = "black"
 
 class Circle(ClosedCurve):
-    def __init__(self, x, y, rad, color):
+    def __init__(self, x=100, y=200, rad=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class
@@ -16,7 +17,7 @@ class Circle(ClosedCurve):
                x+rad,
                y+rad]
         self.area = math.pi * rad**2
-        super(Circle, self).__init__(dot, color)
+        super(Circle, self).__init__(dot, color,poly)
 
     def calc_area(self):
         """

@@ -32,92 +32,13 @@ except ImportError:
 def calc_shape(txt, shape, data):
     global was_hidden
     if not was_hidden:
-        obj = data.get_obj(shape[0])
+        obj = data.get_obj(shape)
         if type(obj[0]) is not Polygon:
             area = str(obj[0].calc_area()) + " pixel^2"
         else:
             area = str(obj[0].calc_area())
         txt.configure(text=area)
         print('Shape_Func_support.calc_shape')
-        sys.stdout.flush()
-    else:
-        destroy_window()
-
-def change_color(canvas, shape, data, color):
-    global was_hidden
-    if not was_hidden:
-        obj = data.get_obj(shape[0])
-        obj[0].set_fill_color(color)
-        obj[1][len(obj[1])-1] = color
-        data.set_value(shape, obj)
-        canvas.itemconfig(shape, fill=color)
-        print('Shape_Func_support.change_color')
-        sys.stdout.flush()
-    else:
-        destroy_window()
-
-def chenge_shape(canvas, shape, data, action, val):
-    global was_hidden
-    if not was_hidden:
-        obj = data.get_obj(shape[0])
-        new_obj = None
-        value = None
-        if action == "side1":
-            if type(obj[0]) is Right_Tri:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4]]
-                new_obj = Right_Tri(obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4])
-            elif type(obj[0]) is Isosceles_Tri:
-                value = [obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4]]
-                new_obj = Isosceles_Tri(obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4])
-            elif type(obj[0]) is Square:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3]]
-                new_obj = Square(obj[1][0], obj[1][1], int(val), obj[1][3])
-            elif type(obj[0]) is Equilateral_Triangle:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3]]
-                new_obj = Equilateral_Triangle(obj[1][0], obj[1][1], int(val), obj[1][3])
-            elif type(obj[0]) is Rectangle:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4]]
-                new_obj = Rectangle(obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4])
-            elif type(obj[0]) is Parallelogram:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4]]
-                new_obj = Parallelogram(obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4])
-        elif action == "side2":
-            if type(obj[0]) is Right_Tri:
-                value = [obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4]]
-                new_obj = Right_Tri(obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4])
-            elif type(obj[0]) is Rectangle:
-                value = [obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4]]
-                new_obj = Rectangle(obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4])
-            elif type(obj[0]) is Parallelogram:
-                value = [obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4]]
-                new_obj = Parallelogram(obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4])
-        elif action == "base":
-            if type(obj[0]) is Isosceles_Tri:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4]]
-                new_obj = Isosceles_Tri(obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4])
-        elif action == "rad":
-            if type(obj[0]) is Circle:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3]]
-                new_obj = Circle(obj[1][0], obj[1][1], int(val), obj[1][3])
-            elif type(obj[0]) is Ellipse:
-                value = [obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4]]
-                new_obj = Ellipse(obj[1][0], obj[1][1], obj[1][2], int(val), obj[1][4])
-        elif action == "v_rad":
-            if type(obj[0]) is Ellipse:
-                value = [obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4]]
-                new_obj = Ellipse(obj[1][0], obj[1][1], int(val), obj[1][3], obj[1][4])
-        elif action == "angle":
-            if type(obj[0]) is Parallelogram:
-                value = [obj[1][0], obj[1][1], obj[1][2], obj[1][3], int(val), obj[1][5]]
-                new_obj = Parallelogram(obj[1][0], obj[1][1], obj[1][2], obj[1][3], int(val), obj[1][5])
-        if new_obj is not None:
-            data.delete_value(shape[0])
-            canvas.delete(shape)
-            id = new_obj.draw_me(canvas)
-            new_obj_info = [new_obj, value]
-            data.set_value(id, new_obj_info)
-        destroy_window()
-        print('Shape_Func_support.chenge_shape')
         sys.stdout.flush()
     else:
         destroy_window()
@@ -133,48 +54,6 @@ def delete_shape(canvas, shape, data):
     else:
         destroy_window()
 
-def move_x(canvas, shape, data, x):
-    global was_hidden
-    if not was_hidden:
-        obj = data.get_obj(shape[0])
-        data.delete_value(shape[0])
-        canvas.delete(shape)
-        if type(obj[0]) is Right_Tri:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Right_Tri(int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Isosceles_Tri:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Isosceles_Tri(int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Square:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3]]
-            new_obj = Square(int(x), obj[1][1], obj[1][2], obj[1][3])
-        elif type(obj[0]) is Equilateral_Triangle:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3]]
-            new_obj = Equilateral_Triangle(int(x), obj[1][1], obj[1][2], obj[1][3])
-        elif type(obj[0]) is Rectangle:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Rectangle(int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Parallelogram:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4], obj[1][5]]
-            new_obj = Parallelogram(int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4], obj[1][5])
-        elif type(obj[0]) is Circle:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3]]
-            new_obj = Circle(int(x), obj[1][1], obj[1][2], obj[1][3])
-        elif type(obj[0]) is Ellipse:
-            value = [int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Ellipse(int(x), obj[1][1], obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Polygon:
-            obj[1][0][0] = x
-            value = obj[1][0]
-            new_obj = Polygon(obj[1][0], obj[1][1])
-        if new_obj is not None:
-            id = new_obj.draw_me(canvas)
-            new_obj_info = [new_obj, value]
-            data.set_value(id, new_obj_info)
-        print('Shape_Func_support.move_shape_x')
-        sys.stdout.flush()
-    else:
-        destroy_window()
 
 def hide_shape(root, canvas, shape, data):
     global was_hidden
@@ -186,51 +65,6 @@ def hide_shape(root, canvas, shape, data):
         sys.stdout.flush()
     else:
         destroy_window()
-
-def move_y(canvas, shape, data, y):
-    global was_hidden
-    if not was_hidden:
-        obj = data.get_obj(shape[0])
-        data.delete_value(shape[0])
-        canvas.delete(shape)
-        if type(obj[0]) is Right_Tri:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Right_Tri(obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Isosceles_Tri:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Isosceles_Tri(obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Square:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3]]
-            new_obj = Square(obj[1][0], int(y), obj[1][2], obj[1][3])
-        elif type(obj[0]) is Equilateral_Triangle:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3]]
-            new_obj = Equilateral_Triangle(obj[1][0], int(y), obj[1][2], obj[1][3])
-        elif type(obj[0]) is Rectangle:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Rectangle(obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Parallelogram:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4], obj[1][5]]
-            new_obj = Parallelogram(obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4], obj[1][5])
-        elif type(obj[0]) is Circle:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3]]
-            new_obj = Circle(obj[1][0], int(y), obj[1][2], obj[1][3])
-        elif type(obj[0]) is Ellipse:
-            value = [obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4]]
-            new_obj = Ellipse(obj[1][0], int(y), obj[1][2], obj[1][3], obj[1][4])
-        elif type(obj[0]) is Polygon:
-            obj[1][0][1] = y
-            value = obj[1]
-            new_obj = Polygon(obj[1][0], obj[1][1])
-        if new_obj is not None:
-            id = new_obj.draw_me(canvas)
-            new_obj_info = [new_obj, value]
-            data.set_value(id, new_obj_info)
-        destroy_window()
-        print('Shape_Func_support.move_shape')
-        sys.stdout.flush()
-    else:
-        destroy_window()
-
 
 def move_shape(canvas, shape, data):
     global was_hidden

@@ -3,7 +3,7 @@ from Polygon import *
 BLACK = "black"
 
 class Right_Tri(Polygon):
-    def __init__(self, x=10, y=10, side1=10, side2=10, color=BLACK):
+    def __init__(self, x=10, y=10, side1=10, side2=10, color=BLACK, poly=BLACK):
         """
         an initializer for the class
         ;values: is a list of the values that the class get from the user
@@ -16,7 +16,7 @@ class Right_Tri(Polygon):
         dot = [x, y, x,
                side1+y, side2+x,
                side1+y]
-        super(Right_Tri, self).__init__(dot, color)
+        super(Right_Tri, self).__init__(dot, color, poly)
 
 
     def calc_area(self):

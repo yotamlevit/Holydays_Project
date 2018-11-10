@@ -1,5 +1,6 @@
 from Polygon import *
 
+BLACK = "black"
 
 class Equilateral_Triangle(Polygon):
     """
@@ -10,7 +11,7 @@ class Equilateral_Triangle(Polygon):
     ;color: is the color that the user wants to
      fill the equilateral triangle with
     """
-    def __init__(self, x, y, side, color):
+    def __init__(self, x=100, y=0, side=10, color=BLACK, poly=BLACK):
         hight = math.sin(math.acos((side/2) /
                         side)) * side
         dot = [x, y,
@@ -20,7 +21,7 @@ class Equilateral_Triangle(Polygon):
                y + hight]
         self.area = hight*dot[2]/2
 
-        super(Equilateral_Triangle, self).__init__(dot, color)
+        super(Equilateral_Triangle, self).__init__(dot, color, poly)
 
 
     def calc_area(self):
